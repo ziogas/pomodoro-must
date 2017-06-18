@@ -1,0 +1,22 @@
+{
+  "notification_title": {
+    "message": "Pomodoro - MUST",
+    "description": "Notification title text."
+  },
+  "notification_message": {
+    "message": "Can't find pomodoro session!",
+    "description": "Notification message text."
+  },
+  "notification_context": {
+    "message": "You MUST use pomodoro.",
+    "description":"Notification context text."
+  },
+  "notification_button_start": {
+    "message": "Start it NOW",
+    "description": "First notification button, focuses tomato.es tab."
+  },
+  "notification_button_ignore": {
+    "message": "Ignore (5min)",
+    "description": "Second nofitication button, ignores pomodoro for 5 minutes."
+  }
+}
