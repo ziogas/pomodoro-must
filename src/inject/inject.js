@@ -1,19 +1,15 @@
 chrome.extension.sendMessage({}, function(response) {
 
-    // 10 seconds
-    var checkInterval = 10000,
-        queryForLoggedIn = '.user_name',
-        queryForTimer = '#timer';
+    // 20 seconds
+    var checkInterval = 20000;
 
     var readyStateCheckInterval = setInterval(function() {
         if (document.readyState === "complete") {
             clearInterval(readyStateCheckInterval);
 
-            // If logged in
-            if (document.querySelector(queryForLoggedIn)) {
+            if (isLoggedIn()) {
                 window.checkIfPomodoroRunning = function() {
-                    var timer = document.querySelector(queryForTimer);
-                    if (!timer || timer.style.display == 'none') {
+                    if (!isTimerRunning()) {
                         chrome.runtime.sendMessage({
                             type: "notification",
                             options: {
@@ -33,8 +29,9 @@ chrome.extension.sendMessage({}, function(response) {
                         }, function(response) {
                             window.setTimeout(window.checkIfPomodoroRunning, checkInterval);
                         });
+                    // If timer is running we can check later
                     } else {
-                        window.setTimeout(window.checkIfPomodoroRunning, checkInterval);
+                        window.setTimeout(window.checkIfPomodoroRunning, checkInterval*3);
                     }
                 }
 
@@ -43,4 +40,17 @@ chrome.extension.sendMessage({}, function(response) {
 
         }
     }, 10);
+
+    function isLoggedIn() {
+        return !!(document.querySelector('.user_name'));
+    }
+
+    function isTimerRunning() {
+        var timer = document.querySelector('#timer');
+        if (!timer || timer.style.display == 'none') {
+            return false;
+        }
+
+        return true;
+    }
 });

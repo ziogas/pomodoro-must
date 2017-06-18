@@ -1,6 +1,6 @@
 {
   "name": "Pomodoro - MUST",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "manifest_version": 2,
   "description": "Checks active tomato.es session and sends annoying notifications if you're not in pomodoro mode.",
   "homepage_url": "https://github.com/ziogas/pomodoro-must",
