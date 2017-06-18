@@ -21,6 +21,13 @@ Advantages:
 
 Feel free to mess around the codebase or change _locales/en/messages.json file to add your motivational phrases. After that install extension with "Option 2".
 
+If you want to change the pomodoro website from tomato.es to something else just modify the source:
+
+* manifest.json - permissions and content_scripts section.
+* src/inject/inject.js - performed dom queries to check the timer state.
+
+Then load unpacked extension from "Option 2".
+
 ## Contributing
 
 1. Fork it!
