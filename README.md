@@ -1,4 +1,4 @@
-Google Chrome extension which helps you to stay in pomodoro mode
+Google Chrome extension helping you to stay in pomodoro mode
 ==========================================================
 
 It's not easy for all of us to stay in [pomodoro] mode. Constant struggle to don't forget on/off timers can be discouraging. At the same time working with pomodoros brings efficiency and greatly reduces procrastination.
@@ -38,6 +38,6 @@ Arminas Zukauskas - arminas@ini.lt
 
 [pomodoro]: https://cirillocompany.de/pages/pomodoro-technique
 [tomato.es]: http://tomato.es
-[extension page]: https://chrome.google.com/webstore/category/extensions
+[extension page]: https://chrome.google.com/webstore/detail/pomodoro-must/fgfijdapfaaflemmapmdegapgmhgfkhh
 [browser extension page]: chrome://extensions/
 [MIT]: https://tldrlegal.com/license/mit-license
