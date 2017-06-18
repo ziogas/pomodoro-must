@@ -31,8 +31,9 @@ chrome.extension.sendMessage({}, function(response) {
                     }, function(response) {
                         window.setTimeout(window.checkIfPomodoroRunning, checkInterval);
                     });
+                } else {
+                    window.setTimeout(window.checkIfPomodoroRunning, checkInterval);
                 }
-
             }
 
             window.setTimeout(window.checkIfPomodoroRunning, checkInterval);
