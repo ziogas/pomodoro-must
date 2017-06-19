@@ -11,6 +11,8 @@ Advantages:
 * Safe: No 3rd party calls, your data stays secure in the tab <-> extension communication channel.
 * *Completely transparent*: less than a hundred lines of code are easy to read to ensure that nothing fishy is happening.
 
+![How it looks like](screenshots/notification-screen.png?raw=true "How it looks like")
+
 ## Install
 
 * Option 1: go to the [extension page] and install it.
